@@ -1,0 +1,9 @@
+vendor/
+vendors/
+temp/
+temps/
+font/
+fonts/
+Trash/
+.localized
+.DS_Store

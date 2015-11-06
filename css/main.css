@@ -1,0 +1,9 @@
+@font-face {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Open Sans"), local("OpenSans"), url(fonts/open-sans-v13.ttf) format("truetype"); }
+body {
+  font-family: "Open Sans", sans-serif; }
+
+/*# sourceMappingURL=main.css.map */
