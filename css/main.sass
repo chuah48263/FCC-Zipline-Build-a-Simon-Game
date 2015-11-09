@@ -6,3 +6,680 @@
 
 body
   font-family: "Open Sans", sans-serif
+  background-color: #fdf6e3
+  -webkit-touch-callout: none
+  -webkit-user-select: none
+  -khtml-user-select: none
+  -moz-user-select: none
+  -ms-user-select: none
+  user-select: none
+
+  .row
+    margin-left: 0
+    margin-right: 0
+
+  .top
+    height: 10vmin
+
+  .simon
+    .top
+      .top-left
+        text-align: right
+        padding-right: 0
+
+        a
+          height: 40vmin
+          width: 40vmin
+          border-top-left-radius: 100%
+          border-top-right-radius: 0
+          border-bottom-left-radius: 0
+          border-bottom-right-radius: 0
+          border: 3vmin solid #333
+          border-right-width: 1.5vmin
+          border-bottom-width: 1.5vmin
+          box-shadow: 0 0 2.5vmin #333
+
+      .top-right
+        text-align: left
+        padding-left: 0
+
+        a
+          height: 40vmin
+          width: 40vmin
+          border-top-left-radius: 0
+          border-top-right-radius: 100%
+          border-bottom-left-radius: 0
+          border-bottom-right-radius: 0
+          border: 3vmin solid #333
+          border-left-width: 1.5vmin
+          border-bottom-width: 1.5vmin
+          box-shadow: 0 0 2.5vmin #333
+
+    .middle
+      background-color: #ECE7EE
+      position: absolute
+      height: 40vmin
+      width: 40vmin
+      margin-left: auto
+      margin-right: auto
+      left: 0
+      right: 0
+      z-index: 1
+      border-radius: 100%
+      top: 30vmin
+      border: 3vmin solid #333
+      display: flex
+      align-items: center
+      justify-content: center
+      flex-direction: row
+      flex-wrap: wrap
+      align-content: center
+
+      .middle-well
+        .well
+          margin-bottom: 0
+          width: 100%
+          margin-left: auto
+          margin-right: auto
+          font-family: "Ubuntu Mono", monospace
+          font-size: 8vmin
+          text-align: center
+          padding: 0 3vmin 0 3vmin
+          background-color: #32050C
+          color: #DC0D29
+          border-radius: 15%
+          cursor: default
+
+      .middle-top
+        text-align: center
+        margin-top: 1vmin
+        margin-bottom: 1vmin
+
+        .middle-top-left, .middle-top-left.disabled
+          margin: 1vmin
+          font-size: 3vmin
+          padding: 0.5vmin
+          font-weight: bold
+          background-color: #eee8d5
+          border: 0.375vmin solid #333
+          width: 12vmin
+          box-shadow: 0 0.375vmin 0.75vmin #333
+          cursor: default
+          opacity: 1
+
+        .middle-top-left.switched
+          background-color: #fdf6e3
+          cursor: pointer
+
+        .middle-top-left:active
+          box-shadow: none
+          background-color: #ffffd7
+          cursor: pointer
+
+        .middle-top-right
+          margin: 1vmin
+          font-size: 3vmin
+          padding: 0.5vmin
+          font-weight: bold
+          background-color: #eee8d5
+          border: 0.375vmin solid #333
+          width: 12vmin
+          box-shadow: 0 0.375vmin 0.75vmin #333
+          cursor: default
+
+        .middle-top-right.switched
+          background-color: #fdf6e3
+          cursor: pointer
+
+        .middle-top-right.active
+          box-shadow: none
+          background-color: #ffffd7
+          cursor: pointer
+
+      .middle-bottom
+        text-align: center
+        font-family: "Ubuntu Mono", monospace
+
+        .middle-bottom-left
+          font-size: 2.5vmin
+          padding: 0
+          border: 0
+          border-style: solid
+          border-color: #333
+
+        .middle-bottom-right
+          font-size: 2.5vmin
+          padding: 0
+          border: 0
+          border-style: solid
+          border-color: #333
+
+    .bottom
+      .bottom-left
+        text-align: right
+        padding-right: 0
+
+        a
+          height: 40vmin
+          width: 40vmin
+          border-top-left-radius: 0
+          border-top-right-radius: 0
+          border-bottom-left-radius: 100%
+          border-bottom-right-radius: 0
+          border: 3vmin solid #333
+          border-right-width: 1.5vmin
+          border-top-width: 1.5vmin
+          box-shadow: 0 0 2.5vmin #333
+
+      .bottom-right
+        text-align: left
+        padding-left: 0
+
+        a
+          height: 40vmin
+          width: 40vmin
+          border-top-left-radius: 0
+          border-top-right-radius: 0
+          border-bottom-left-radius: 0
+          border-bottom-right-radius: 100%
+          border: 3vmin solid #333
+          border-left-width: 1.5vmin
+          border-top-width: 1.5vmin
+          box-shadow: 0 0 2.5vmin #333
+
+.btn-primary-simon
+  background-color: #286090
+
+.btn-primary-simon.focus,
+.btn-primary-simon:focus
+  background-color: #286090
+
+.btn-primary-simon:hover
+  background-color: #286090
+
+.btn-primary-simon.active,
+.btn-primary-simon:active,
+.open > .dropdown-toggle.btn-primary-simon
+  background-color: #337ab7
+
+.btn-primary-simon.active.focus,
+.btn-primary-simon.active:focus,
+.btn-primary-simon.active:hover,
+.btn-primary-simon:active.focus,
+.btn-primary-simon:active:focus,
+.btn-primary-simon:active:hover,
+.open > .dropdown-toggle.btn-primary-simon.focus,
+.open > .dropdown-toggle.btn-primary-simon:focus,
+.open > .dropdown-toggle.btn-primary-simon:hover
+  background-color: #337ab7
+
+.btn-primary-simon.disabled,
+.btn-primary-simon.disabled.active,
+.btn-primary-simon.disabled.focus,
+.btn-primary-simon.disabled:active,
+.btn-primary-simon.disabled:focus,
+.btn-primary-simon.disabled:hover,
+.btn-primary-simon[disabled],
+.btn-primary-simon[disabled].active,
+.btn-primary-simon[disabled].focus,
+.btn-primary-simon[disabled]:active,
+.btn-primary-simon[disabled]:focus,
+.btn-primary-simon[disabled]:hover,
+fieldset[disabled] .btn-primary-simon,
+fieldset[disabled] .btn-primary-simon.active,
+fieldset[disabled] .btn-primary-simon.focus,
+fieldset[disabled] .btn-primary-simon:active,
+fieldset[disabled] .btn-primary-simon:focus,
+fieldset[disabled] .btn-primary-simon:hover
+  background-color: #286090
+
+.btn-primary-simon.switched,
+.btn-primary-simon.switched.focus,
+.btn-primary-simon.switched:focus,
+.btn-primary-simon.switched:hover,
+.btn-primary-simon.switched.active,
+.btn-primary-simon.switched:active,
+.open > .dropdown-toggle.btn-primary-simon.switched,
+.btn-primary-simon.switched.active.focus,
+.btn-primary-simon.switched.active:focus,
+.btn-primary-simon.switched.active:hover,
+.btn-primary-simon.switched:active.focus,
+.btn-primary-simon.switched:active:focus,
+.btn-primary-simon.switched:active:hover,
+.open > .dropdown-toggle.btn-primary-simon.switched.focus,
+.open > .dropdown-toggle.btn-primary-simon.switched:focus,
+.open > .dropdown-toggle.btn-primary-simon.switched:hover,
+.btn-primary-simon.switched.disabled,
+.btn-primary-simon.switched.disabled.active,
+.btn-primary-simon.switched.disabled.focus,
+.btn-primary-simon.switched.disabled:active,
+.btn-primary-simon.switched.disabled:focus,
+.btn-primary-simon.switched.disabled:hover,
+.btn-primary-simon.switched[disabled],
+.btn-primary-simon.switched[disabled].active,
+.btn-primary-simon.switched[disabled].focus,
+.btn-primary-simon.switched[disabled]:active,
+.btn-primary-simon.switched[disabled]:focus,
+.btn-primary-simon.switched[disabled]:hover,
+fieldset[disabled] .btn-primary-simon.switched,
+fieldset[disabled] .btn-primary-simon.switched.active,
+fieldset[disabled] .btn-primary-simon.switched.focus,
+fieldset[disabled] .btn-primary-simon.switched:active,
+fieldset[disabled] .btn-primary-simon.switched:focus,
+fieldset[disabled] .btn-primary-simon.switched:hover
+  background-color: #286090
+  cursor: default
+
+.btn-success-simon
+  background-color: #449d44
+
+.btn-success-simon.focus,
+.btn-success-simon:focus
+  background-color: #449d44
+
+.btn-success-simon:hover
+  background-color: #449d44
+
+.btn-success-simon.active,
+.btn-success-simon:active,
+.open > .dropdown-toggle.btn-success-simon
+  background-color: #5cb85c
+
+.btn-success-simon.active.focus,
+.btn-success-simon.active:focus,
+.btn-success-simon.active:hover,
+.btn-success-simon:active.focus,
+.btn-success-simon:active:focus,
+.btn-success-simon:active:hover,
+.open > .dropdown-toggle.btn-success-simon.focus,
+.open > .dropdown-toggle.btn-success-simon:focus,
+.open > .dropdown-toggle.btn-success-simon:hover
+  background-color: #5cb85c
+
+.btn-success-simon.disabled,
+.btn-success-simon.disabled.active,
+.btn-success-simon.disabled.focus,
+.btn-success-simon.disabled:active,
+.btn-success-simon.disabled:focus,
+.btn-success-simon.disabled:hover,
+.btn-success-simon[disabled],
+.btn-success-simon[disabled].active,
+.btn-success-simon[disabled].focus,
+.btn-success-simon[disabled]:active,
+.btn-success-simon[disabled]:focus,
+.btn-success-simon[disabled]:hover,
+fieldset[disabled] .btn-success-simon,
+fieldset[disabled] .btn-success-simon.active,
+fieldset[disabled] .btn-success-simon.focus,
+fieldset[disabled] .btn-success-simon:active,
+fieldset[disabled] .btn-success-simon:focus,
+fieldset[disabled] .btn-success-simon:hover
+  background-color: #449d44
+
+.btn-success-simon.switched,
+.btn-success-simon.switched.focus,
+.btn-success-simon.switched:focus,
+.btn-success-simon.switched:hover,
+.btn-success-simon.switched.active,
+.btn-success-simon.switched:active,
+.open > .dropdown-toggle.btn-success-simon.switched,
+.btn-success-simon.switched.active.focus,
+.btn-success-simon.switched.active:focus,
+.btn-success-simon.switched.active:hover,
+.btn-success-simon.switched:active.focus,
+.btn-success-simon.switched:active:focus,
+.btn-success-simon.switched:active:hover,
+.open > .dropdown-toggle.btn-success-simon.switched.focus,
+.open > .dropdown-toggle.btn-success-simon.switched:focus,
+.open > .dropdown-toggle.btn-success-simon.switched:hover,
+.btn-success-simon.switched.disabled,
+.btn-success-simon.switched.disabled.active,
+.btn-success-simon.switched.disabled.focus,
+.btn-success-simon.switched.disabled:active,
+.btn-success-simon.switched.disabled:focus,
+.btn-success-simon.switched.disabled:hover,
+.btn-success-simon.switched[disabled],
+.btn-success-simon.switched[disabled].active,
+.btn-success-simon.switched[disabled].focus,
+.btn-success-simon.switched[disabled]:active,
+.btn-success-simon.switched[disabled]:focus,
+.btn-success-simon.switched[disabled]:hover,
+fieldset[disabled] .btn-success-simon.switched,
+fieldset[disabled] .btn-success-simon.switched.active,
+fieldset[disabled] .btn-success-simon.switched.focus,
+fieldset[disabled] .btn-success-simon.switched:active,
+fieldset[disabled] .btn-success-simon.switched:focus,
+fieldset[disabled] .btn-success-simon.switched:hover
+  background-color: #449d44
+  cursor: default
+
+.btn-warning-simon
+  background-color: #ec971f
+
+.btn-warning-simon.focus,
+.btn-warning-simon:focus
+  background-color: #ec971f
+
+.btn-warning-simon:hover
+  background-color: #ec971f
+
+.btn-warning-simon.active,
+.btn-warning-simon:active,
+.open > .dropdown-toggle.btn-warning-simon
+  background-color: #f0ad4e
+
+.btn-warning-simon.active.focus,
+.btn-warning-simon.active:focus,
+.btn-warning-simon.active:hover,
+.btn-warning-simon:active.focus,
+.btn-warning-simon:active:focus,
+.btn-warning-simon:active:hover,
+.open > .dropdown-toggle.btn-warning-simon.focus,
+.open > .dropdown-toggle.btn-warning-simon:focus,
+.open > .dropdown-toggle.btn-warning-simon:hover
+  background-color: #f0ad4e
+
+.btn-warning-simon.disabled,
+.btn-warning-simon.disabled.active,
+.btn-warning-simon.disabled.focus,
+.btn-warning-simon.disabled:active,
+.btn-warning-simon.disabled:focus,
+.btn-warning-simon.disabled:hover,
+.btn-warning-simon[disabled],
+.btn-warning-simon[disabled].active,
+.btn-warning-simon[disabled].focus,
+.btn-warning-simon[disabled]:active,
+.btn-warning-simon[disabled]:focus,
+.btn-warning-simon[disabled]:hover,
+fieldset[disabled] .btn-warning-simon,
+fieldset[disabled] .btn-warning-simon.active,
+fieldset[disabled] .btn-warning-simon.focus,
+fieldset[disabled] .btn-warning-simon:active,
+fieldset[disabled] .btn-warning-simon:focus,
+fieldset[disabled] .btn-warning-simon:hover
+  background-color: #ec971f
+
+.btn-warning-simon.switched,
+.btn-warning-simon.switched.focus,
+.btn-warning-simon.switched:focus,
+.btn-warning-simon.switched:hover,
+.btn-warning-simon.switched.active,
+.btn-warning-simon.switched:active,
+.open > .dropdown-toggle.btn-warning-simon.switched,
+.btn-warning-simon.switched.active.focus,
+.btn-warning-simon.switched.active:focus,
+.btn-warning-simon.switched.active:hover,
+.btn-warning-simon.switched:active.focus,
+.btn-warning-simon.switched:active:focus,
+.btn-warning-simon.switched:active:hover,
+.open > .dropdown-toggle.btn-warning-simon.switched.focus,
+.open > .dropdown-toggle.btn-warning-simon.switched:focus,
+.open > .dropdown-toggle.btn-warning-simon.switched:hover,
+.btn-warning-simon.switched.disabled,
+.btn-warning-simon.switched.disabled.active,
+.btn-warning-simon.switched.disabled.focus,
+.btn-warning-simon.switched.disabled:active,
+.btn-warning-simon.switched.disabled:focus,
+.btn-warning-simon.switched.disabled:hover,
+.btn-warning-simon.switched[disabled],
+.btn-warning-simon.switched[disabled].active,
+.btn-warning-simon.switched[disabled].focus,
+.btn-warning-simon.switched[disabled]:active,
+.btn-warning-simon.switched[disabled]:focus,
+.btn-warning-simon.switched[disabled]:hover,
+fieldset[disabled] .btn-warning-simon.switched,
+fieldset[disabled] .btn-warning-simon.switched.active,
+fieldset[disabled] .btn-warning-simon.switched.focus,
+fieldset[disabled] .btn-warning-simon.switched:active,
+fieldset[disabled] .btn-warning-simon.switched:focus,
+fieldset[disabled] .btn-warning-simon.switched:hover
+  background-color: #ec971f
+  cursor: default
+
+.btn-danger-simon
+  background-color: #c9302c
+
+.btn-danger-simon.focus,
+.btn-danger-simon:focus
+  background-color: #c9302c
+
+.btn-danger-simon:hover
+  background-color: #c9302c
+
+.btn-danger-simon.active,
+.btn-danger-simon:active,
+.open > .dropdown-toggle.btn-danger-simon
+  background-color: #d9534f
+
+.btn-danger-simon.active.focus,
+.btn-danger-simon.active:focus,
+.btn-danger-simon.active:hover,
+.btn-danger-simon:active.focus,
+.btn-danger-simon:active:focus,
+.btn-danger-simon:active:hover,
+.open > .dropdown-toggle.btn-danger-simon.focus,
+.open > .dropdown-toggle.btn-danger-simon:focus,
+.open > .dropdown-toggle.btn-danger-simon:hover
+  background-color: #d9534f
+
+.btn-danger-simon.disabled,
+.btn-danger-simon.disabled.active,
+.btn-danger-simon.disabled.focus,
+.btn-danger-simon.disabled:active,
+.btn-danger-simon.disabled:focus,
+.btn-danger-simon.disabled:hover,
+.btn-danger-simon[disabled],
+.btn-danger-simon[disabled].active,
+.btn-danger-simon[disabled].focus,
+.btn-danger-simon[disabled]:active,
+.btn-danger-simon[disabled]:focus,
+.btn-danger-simon[disabled]:hover,
+fieldset[disabled] .btn-danger-simon,
+fieldset[disabled] .btn-danger-simon.active,
+fieldset[disabled] .btn-danger-simon.focus,
+fieldset[disabled] .btn-danger-simon:active,
+fieldset[disabled] .btn-danger-simon:focus,
+fieldset[disabled] .btn-danger-simon:hover
+  background-color: #c9302c
+
+.btn-danger-simon.switched,
+.btn-danger-simon.switched.focus,
+.btn-danger-simon.switched:focus,
+.btn-danger-simon.switched:hover,
+.btn-danger-simon.switched.active,
+.btn-danger-simon.switched:active,
+.open > .dropdown-toggle.btn-danger-simon.switched,
+.btn-danger-simon.switched.active.focus,
+.btn-danger-simon.switched.active:focus,
+.btn-danger-simon.switched.active:hover,
+.btn-danger-simon.switched:active.focus,
+.btn-danger-simon.switched:active:focus,
+.btn-danger-simon.switched:active:hover,
+.open > .dropdown-toggle.btn-danger-simon.switched.focus,
+.open > .dropdown-toggle.btn-danger-simon.switched:focus,
+.open > .dropdown-toggle.btn-danger-simon.switched:hover,
+.btn-danger-simon.switched.disabled,
+.btn-danger-simon.switched.disabled.active,
+.btn-danger-simon.switched.disabled.focus,
+.btn-danger-simon.switched.disabled:active,
+.btn-danger-simon.switched.disabled:focus,
+.btn-danger-simon.switched.disabled:hover,
+.btn-danger-simon.switched[disabled],
+.btn-danger-simon.switched[disabled].active,
+.btn-danger-simon.switched[disabled].focus,
+.btn-danger-simon.switched[disabled]:active,
+.btn-danger-simon.switched[disabled]:focus,
+.btn-danger-simon.switched[disabled]:hover,
+fieldset[disabled] .btn-danger-simon.switched,
+fieldset[disabled] .btn-danger-simon.switched.active,
+fieldset[disabled] .btn-danger-simon.switched.focus,
+fieldset[disabled] .btn-danger-simon.switched:active,
+fieldset[disabled] .btn-danger-simon.switched:focus,
+fieldset[disabled] .btn-danger-simon.switched:hover
+  background-color: #c9302c
+  cursor: default
+
+.btn-default-switch
+  background-color: #333
+
+.btn-default-switch.focus,
+.btn-default-switch:focus
+  background-color: #333
+
+.btn-default-switch:hover
+  background-color: #333
+
+.btn-default-switch.active,
+.btn-default-switch:active,
+.open > .dropdown-toggle.btn-default-switch
+  background-color: #333
+
+.btn-default-switch.active.focus,
+.btn-default-switch.active:focus,
+.btn-default-switch.active:hover,
+.btn-default-switch:active.focus,
+.btn-default-switch:active:focus,
+.btn-default-switch:active:hover,
+.open > .dropdown-toggle.btn-default-switch.focus,
+.open > .dropdown-toggle.btn-default-switch:focus,
+.open > .dropdown-toggle.btn-default-switch:hover
+  background-color: #333
+
+.btn-default-switch.disabled,
+.btn-default-switch.disabled.active,
+.btn-default-switch.disabled.focus,
+.btn-default-switch.disabled:active,
+.btn-default-switch.disabled:focus,
+.btn-default-switch.disabled:hover,
+.btn-default-switch[disabled],
+.btn-default-switch[disabled].active,
+.btn-default-switch[disabled].focus,
+.btn-default-switch[disabled]:active,
+.btn-default-switch[disabled]:focus,
+.btn-default-switch[disabled]:hover,
+fieldset[disabled] .btn-default-switch,
+fieldset[disabled] .btn-default-switch.active,
+fieldset[disabled] .btn-default-switch.focus,
+fieldset[disabled] .btn-default-switch:active,
+fieldset[disabled] .btn-default-switch:focus,
+fieldset[disabled] .btn-default-switch:hover
+  background-color: #333
+
+.btn-success-switch
+  background-color: #449d44
+
+.btn-success-switch.focus,
+.btn-success-switch:focus
+  background-color: #449d44
+
+.btn-success-switch:hover
+  background-color: #449d44
+
+.btn-success-switch.active,
+.btn-success-switch:active,
+.open > .dropdown-toggle.btn-success-switch
+  background-color: #449d44
+
+.btn-success-switch.active.focus,
+.btn-success-switch.active:focus,
+.btn-success-switch.active:hover,
+.btn-success-switch:active.focus,
+.btn-success-switch:active:focus,
+.btn-success-switch:active:hover,
+.open > .dropdown-toggle.btn-success-switch.focus,
+.open > .dropdown-toggle.btn-success-switch:focus,
+.open > .dropdown-toggle.btn-success-switch:hover
+  background-color: #449d44
+
+.btn-success-switch.disabled,
+.btn-success-switch.disabled.active,
+.btn-success-switch.disabled.focus,
+.btn-success-switch.disabled:active,
+.btn-success-switch.disabled:focus,
+.btn-success-switch.disabled:hover,
+.btn-success-switch[disabled],
+.btn-success-switch[disabled].active,
+.btn-success-switch[disabled].focus,
+.btn-success-switch[disabled]:active,
+.btn-success-switch[disabled]:focus,
+.btn-success-switch[disabled]:hover,
+fieldset[disabled] .btn-success-switch,
+fieldset[disabled] .btn-success-switch.active,
+fieldset[disabled] .btn-success-switch.focus,
+fieldset[disabled] .btn-success-switch:active,
+fieldset[disabled] .btn-success-switch:focus,
+fieldset[disabled] .btn-success-switch:hover
+  background-color: #449d44
+
+.btn-danger-switch
+  background-color: #c9302c
+
+.btn-danger-switch.focus,
+.btn-danger-switch:focus
+  background-color: #c9302c
+
+.btn-danger-switch:hover
+  background-color: #c9302c
+
+.btn-danger-switch.active,
+.btn-danger-switch:active,
+.open > .dropdown-toggle.btn-danger-switch
+  background-color: #c9302c
+
+.btn-danger-switch.active.focus,
+.btn-danger-switch.active:focus,
+.btn-danger-switch.active:hover,
+.btn-danger-switch:active.focus,
+.btn-danger-switch:active:focus,
+.btn-danger-switch:active:hover,
+.open > .dropdown-toggle.btn-danger-switch.focus,
+.open > .dropdown-toggle.btn-danger-switch:focus,
+.open > .dropdown-toggle.btn-danger-switch:hover
+  background-color: #c9302c
+
+.btn-danger-switch.disabled,
+.btn-danger-switch.disabled.active,
+.btn-danger-switch.disabled.focus,
+.btn-danger-switch.disabled:active,
+.btn-danger-switch.disabled:focus,
+.btn-danger-switch.disabled:hover,
+.btn-danger-switch[disabled],
+.btn-danger-switch[disabled].active,
+.btn-danger-switch[disabled].focus,
+.btn-danger-switch[disabled]:active,
+.btn-danger-switch[disabled]:focus,
+.btn-danger-switch[disabled]:hover,
+fieldset[disabled] .btn-danger-switch,
+fieldset[disabled] .btn-danger-switch.active,
+fieldset[disabled] .btn-danger-switch.focus,
+fieldset[disabled] .btn-danger-switch:active,
+fieldset[disabled] .btn-danger-switch:focus,
+fieldset[disabled] .btn-danger-switch:hover
+  background-color: #c9302c
+
+.btn-no-shadow.active,
+.btn-no-shadow:active
+  background-image: none
+  outline: 0
+  -webkit-box-shadow: none
+  box-shadow: none
+
+.btn-group-vertical > .btn.active,
+.btn-group-vertical > .btn:active,
+.btn-group-vertical > .btn:focus,
+.btn-group-vertical > .btn:hover,
+.btn-group > .btn.active,
+.btn-group > .btn:active,
+.btn-group > .btn:focus,
+.btn-group > .btn:hover
+  z-index: 0
+
+.blink
+  animation: blink 0.5s ease 2
+
+@keyframes blink
+  0%
+    color: #32050C
+
+  50%
+    color: #DC0D29

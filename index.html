@@ -13,7 +13,7 @@
   <title>Simon Game</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
-  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+  <link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono:700" rel="stylesheet" type="text/css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
   <link href="css/vendors/bootstrap.min.css" rel="stylesheet" type="text/css" />
   <link href="css/main.css" rel="stylesheet" type="text/css" />
@@ -23,22 +23,58 @@
   <!--[if lt IE 7]>
     <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
   <![endif]-->
+  <div class="top"></div>
+  <div class="simon container-fluid">
+    <div class="top row">
+      <div class="top-left col-xs-6 col-sm-6 col-md-6 col-lg-6">
+        <a class="btn btn-success-simon btn-no-shadow" ng-class="{'switched': !started}" role="button"></a>
+      </div>
+      <div class="top-right col-xs-6 col-sm-6 col-md-6 col-lg-6">
+        <a class="btn btn-danger-simon btn-no-shadow" ng-class="{'switched': !started}" role="button"></a>
+      </div>
+    </div>
+    <div class="middle row">
+      <div class="middle-well">
+        <div class="well well-sm" ng-bind-html="count" id="well" ng-class="{'blink': flash}"></div>
+      </div>
+      <div class="middle-top col-xs-12 col-sm-12 col-md-12 col-lg-12">
+        <a class="btn btn-default btn-no-shadow middle-top-left" ng-click="start()" ng-class="{'switched': onOff, 'disabled': !onOff}" role="button">Start</a>
+        <a class="btn btn-default btn-no-shadow middle-top-right" ng-click="strict()" ng-class="{'active': onOff && stricted, 'switched': onOff && !stricted}" role="button">Strict</a>
+      </div>
+      <div class="middle-bottom col-xs-12 col-sm-12 col-md-12 col-lg-12">
+        <div class="btn-group" id="switch" role="group" aria-label="...">
+          <a class="btn btn-no-shadow middle-bottom-right" ng-class="onOff ? 'btn-default-switch' : 'btn-danger-switch'" ng-click="switch()" role="button">&nbsp;&nbsp;&nbsp;&nbsp;</a>
+          <a class="btn btn-no-shadow middle-bottom-left" ng-class="onOff ? 'btn-success-switch' : 'btn-default-switch'" ng-click="switch()" role="button">&nbsp;&nbsp;&nbsp;&nbsp;</a>
+        </div>
+      </div>
+    </div>
+    <div class="bottom row">
+      <div class="bottom-left col-xs-6 col-sm-6 col-md-6 col-lg-6">
+        <a class="btn btn-warning-simon btn-no-shadow" ng-class="{'switched': !started}" role="button"></a>
+      </div>
+      <div class="bottom-right col-xs-6 col-sm-6 col-md-6 col-lg-6">
+        <a class="btn btn-primary-simon btn-no-shadow" ng-class="{'switched': !started}" role="button"></a>
+      </div>
+    </div>
+  </div>
   <!--[if lt IE 9]>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>file:///Users/chuah48263/Projects/freeCodeCamp/Zipline/Build-a-Simon-Game/#
     <script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/json3/3.3.2/json3.min.js"></script>
   <![endif]-->
   <!-- Vendors -->
   <script src="js/vendors/angular.min.js"></script>
+  <script src="js/vendors/angular-sanitize.min.js"></script>
   <script src="js/vendors/jquery-2.1.4.min.js"></script>
-  <script src="js/vendors/bootstrap.min.js"></script>
-  <script async defer id="github-bjs" src="https://buttons.github.io/buttons.js"></script>
   <!-- Modules -->
   <script src="js/app.js"></script>
   <!-- Controllers -->
   <script src="js/controllers/MainController.js"></script>
   <!-- jQuery -->
   <script src="js/main.js"></script>
+  </script>
+  <script>
+  document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')
   </script>
 </body>
 
