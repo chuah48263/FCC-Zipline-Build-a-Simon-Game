@@ -74,25 +74,21 @@ app.controller('MainController', ['$scope', '$timeout', function($scope,
           if ($scope.stricted) {
             timer[44] = $timeout(function() {
               $scope.start();
-              console.log('reset');
             }, 1200);
           } else {
             timer[45] = $timeout(function() {
               user = [];
               blink();
-              console.log('incorrect');
             }, 1200);
           }
         } else if (arr[user.length - 1] === user[user.length - 1]) {
           $('#audio' + num).trigger('play');
           if (user.length < 20) {
-            if (arr.length !== user.length) {
-              console.log('correct');
-            } else if (arr.length === user.length) {
+            if (arr.length !== user.length) {} else if (arr.length ===
+              user.length) {
               user = [];
               random();
               blink();
-              console.log('completed');
             }
           } else if (user.length === 20) {
             $scope.started = false;
@@ -124,7 +120,6 @@ app.controller('MainController', ['$scope', '$timeout', function($scope,
 
   var timer = [];
   var blink = function() {
-    console.log(times());
     $scope.started = false;
     arr.forEach(function(element, index) {
       timer[index] = $timeout(function() {
