@@ -1,9 +1,6 @@
-vendor/
-vendors/
-temp/
-temps/
-font/
-fonts/
-Trash/
+*.css.map
+temp
+temps
+Trash
 .localized
 .DS_Store
