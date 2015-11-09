@@ -23,14 +23,20 @@
   <!--[if lt IE 7]>
     <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
   <![endif]-->
+  <audio id="audio1" src="assets/media/simonSound1.mp3"></audio>
+  <audio id="audio3" src="assets/media/simonSound2.mp3"></audio>
+  <audio id="audio2" src="assets/media/simonSound3.mp3"></audio>
+  <audio id="audio0" src="assets/media/simonSound4.mp3"></audio>
+  <audio id="error" src="assets/media/error.wav"></audio>
+  <audio id="success" src="assets/media/success.wav"></audio>
   <div class="top"></div>
   <div class="simon container-fluid">
     <div class="top row">
       <div class="top-left col-xs-6 col-sm-6 col-md-6 col-lg-6">
-        <a class="btn btn-success-simon btn-no-shadow" ng-class="{'switched': !started}" role="button"></a>
+        <a class="btn btn-danger-simon btn-no-shadow" id="0" ng-class="{'switched': !started}" ng-click="press(0)" role="button"></a>
       </div>
       <div class="top-right col-xs-6 col-sm-6 col-md-6 col-lg-6">
-        <a class="btn btn-danger-simon btn-no-shadow" ng-class="{'switched': !started}" role="button"></a>
+        <a class="btn btn-success-simon btn-no-shadow" id="1" ng-class="{'switched': !started}" ng-click="press(1)" role="button"></a>
       </div>
     </div>
     <div class="middle row">
@@ -38,8 +44,8 @@
         <div class="well well-sm" ng-bind-html="count" id="well" ng-class="{'blink': flash}"></div>
       </div>
       <div class="middle-top col-xs-12 col-sm-12 col-md-12 col-lg-12">
-        <a class="btn btn-default btn-no-shadow middle-top-left" ng-click="start()" ng-class="{'switched': onOff, 'disabled': !onOff}" role="button">Start</a>
-        <a class="btn btn-default btn-no-shadow middle-top-right" ng-click="strict()" ng-class="{'active': onOff && stricted, 'switched': onOff && !stricted}" role="button">Strict</a>
+        <a class="btn btn-default btn-no-shadow middle-top-left" ng-click="start()" ng-class="{'switched': onOff, 'disabled': !onOff}" role="button">&nbsp;Start&nbsp;</a>
+        <a class="btn btn-default btn-no-shadow middle-top-right" ng-click="strict()" ng-class="{'active': onOff && stricted, 'switched': onOff && !stricted}" role="button">&nbsp;Strict&nbsp;</a>
       </div>
       <div class="middle-bottom col-xs-12 col-sm-12 col-md-12 col-lg-12">
         <div class="btn-group" id="switch" role="group" aria-label="...">
@@ -50,10 +56,10 @@
     </div>
     <div class="bottom row">
       <div class="bottom-left col-xs-6 col-sm-6 col-md-6 col-lg-6">
-        <a class="btn btn-warning-simon btn-no-shadow" ng-class="{'switched': !started}" role="button"></a>
+        <a class="btn btn-primary-simon btn-no-shadow" id="2" ng-class="{'switched': !started}" ng-click="press(2)" role="button"></a>
       </div>
       <div class="bottom-right col-xs-6 col-sm-6 col-md-6 col-lg-6">
-        <a class="btn btn-primary-simon btn-no-shadow" ng-class="{'switched': !started}" role="button"></a>
+        <a class="btn btn-warning-simon btn-no-shadow" id="3" ng-class="{'switched': !started}" ng-click="press(3)" role="button"></a>
       </div>
     </div>
   </div>
